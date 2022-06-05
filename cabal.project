@@ -39,7 +39,11 @@ packages:
     deps/cryptol/cryptol-remote-api
     deps/language-rust
 
+-- https://github.com/ivan-m/graphviz/pull/53
+allow-newer:
+  graphviz:bytestring
+
 source-repository-package
     type: git
-    location: https://github.com/eddywestbrook/hobbits.git
-    tag: e2df7a85ea8dfebce2be8065afdca96cbaef12ae
+    location: https://github.com/RyanGlScott/hobbits.git
+    tag: dbeed181f97174ac97df64c93c63944907e7ea1e

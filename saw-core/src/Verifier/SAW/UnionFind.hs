@@ -1,5 +1,6 @@
 {-# LANGUAGE CPP #-}
 {-# LANGUAGE FlexibleContexts #-}
+{-# OPTIONS_GHC -fno-warn-incomplete-uni-patterns #-}
 {- |
 Module      : Verifier.SAW.UnionFind
 Copyright   : Galois, Inc. 2012-2015

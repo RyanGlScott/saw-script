@@ -251,7 +251,9 @@ matching unif = match
         App t1 t2 -> foldr (match t2) nets (rands t1 comb [])
 
 extract_leaves :: [Net a] -> [a]
-extract_leaves = concatMap (\(Leaf xs) -> xs)
+extract_leaves = concatMap (\n -> case n of
+                                    Leaf xs -> xs
+                                    Net{} -> error "TODO RGS")
 
 {-return items whose key could match t, WHICH MUST BE BETA-ETA NORMAL-}
 match_term :: Pattern t => Net a -> t -> [a]
